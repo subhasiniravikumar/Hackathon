@@ -1,0 +1,2335 @@
+[
+  {
+    "id": "med1041",
+    "brandName": "Abacavir 300mg",
+    "genericName": "Abacavir",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "Antiretroviral for HIV/AIDS treatment",
+    "sideEffects": "Fever, rash, fatigue, headache",
+    "price": "₹150-250 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med184",
+    "brandName": "Doxazosin",
+    "genericName": "Doxazosin",
+    "dosage": "4 mg",
+    "category": "Antihypertensive",
+    "uses": "High blood pressure in CKD",
+    "sideEffects": "Dizziness, fatigue",
+    "price": "₹100-150 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1222",
+    "brandName": "Endo D3 1000 IU",
+    "genericName": "Vitamin D3 (Cholecalciferol)",
+    "dosage": "1 tablet daily",
+    "category": "Supplement",
+    "uses": "Treatment for Vitamin D deficiency and rickets",
+    "sideEffects": "Constipation, headache, nausea",
+    "price": "₹25-60 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med067",
+    "brandName": "Zyprexa 5mg",
+    "genericName": "Olanzapine",
+    "dosage": "5mg",
+    "category": "Antipsychotic",
+    "uses": "Schizophrenia, bipolar disorder",
+    "sideEffects": "Weight gain, dizziness, dry mouth",
+    "price": "₹150-200 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med220",
+    "brandName": "Zinc Supplements",
+    "genericName": "Zinc Sulfate",
+    "dosage": "50 mg",
+    "category": "General",
+    "uses": "Nutritional support in dialysis",
+    "sideEffects": "Nausea, metallic taste",
+    "price": "₹30-50 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med494",
+    "brandName": "Ranozex",
+    "genericName": "Ranolazine",
+    "dosage": "500 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats chronic angina",
+    "sideEffects": "Nausea, headache",
+    "price": "₹100-150 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med430",
+    "brandName": "Ivabrad",
+    "genericName": "Ivabradine",
+    "dosage": "7.5 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats chronic heart failure",
+    "sideEffects": "Visual disturbances, dizziness",
+    "price": "₹60-80 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med240",
+    "brandName": "Calcium Acetate",
+    "genericName": "Calcium Acetate",
+    "dosage": "667 mg",
+    "category": "General",
+    "uses": "Phosphate binder for CKD",
+    "sideEffects": "Constipation, nausea",
+    "price": "₹200-300 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med218",
+    "brandName": "Vitamin E",
+    "genericName": "Tocopherol",
+    "dosage": "400 IU",
+    "category": "Supplement",
+    "uses": "Antioxidant support",
+    "sideEffects": "Nausea, diarrhea",
+    "price": "₹50-100 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med049",
+    "brandName": "Clopitab 75mg",
+    "genericName": "Clopidogrel",
+    "dosage": "75mg",
+    "category": "Cardiovascular",
+    "uses": "Stroke prevention, heart disease",
+    "sideEffects": "Bleeding risk, stomach upset",
+    "price": "₹50-100 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med665",
+    "brandName": "Cilodac",
+    "genericName": "Cilnidipine",
+    "dosage": "5 mg",
+    "category": "Cardiovascular",
+    "uses": "Manages high BP, angina",
+    "sideEffects": "Dizziness, headache",
+    "price": "₹40-60 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med926",
+    "brandName": "Revital H",
+    "genericName": "Multivitamins & Ginseng",
+    "dosage": "1 tablet",
+    "category": "Supplement",
+    "uses": "Boosts energy and general well-being",
+    "sideEffects": "Nausea, headache, restlessness",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med617",
+    "brandName": "Lipvas Gold",
+    "genericName": "Atorvastatin + Aspirin + Clopidogrel",
+    "dosage": "10 mg/75 mg/75 mg",
+    "category": "Cardiovascular",
+    "uses": "Lowers cholesterol, prevents clots",
+    "sideEffects": "Stomach upset, bleeding",
+    "price": "₹200-250 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med361",
+    "brandName": "Dapagliflozin",
+    "genericName": "Dapagliflozin",
+    "dosage": "5 mg",
+    "category": "Antidiabetic",
+    "uses": "Diabetes management in CKD",
+    "sideEffects": "Dehydration, dizziness",
+    "price": "₹300-500 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1423",
+    "brandName": "Hydrocortisone 20mg",
+    "genericName": "Hydrocortisone",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "For Addison's disease treatment",
+    "sideEffects": "Weight gain, insomnia, high blood sugar",
+    "price": "₹50-150 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1244",
+    "brandName": "Aminovitan",
+    "genericName": "Niacinamide + Vitamin B3",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Used for Pellagra and skin health",
+    "sideEffects": "Upset stomach, dizziness, mild headache",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1250",
+    "brandName": "Thiamine 200mg",
+    "genericName": "Thiamine (Vitamin B1)",
+    "dosage": "1 tablet daily",
+    "category": "Supplement",
+    "uses": "Treatment for Beriberi and Vitamin B1 deficiency",
+    "sideEffects": "Nausea, skin rash, dizziness, headache",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med752",
+    "brandName": "Imdur",
+    "genericName": "Isosorbide Mononitrate",
+    "dosage": "60 mg",
+    "category": "Painkiller",
+    "uses": "Controls chronic chest pain",
+    "sideEffects": "Headache, nausea",
+    "price": "₹70-100 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med271",
+    "brandName": "Candesartan",
+    "genericName": "Candesartan Cilexetil",
+    "dosage": "8 mg",
+    "category": "General",
+    "uses": "Hypertension in CKD",
+    "sideEffects": "Dizziness, fatigue",
+    "price": "₹100-150 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1055",
+    "brandName": "Entecavir 0.5mg",
+    "genericName": "Entecavir",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Antiviral for Hepatitis B treatment",
+    "sideEffects": "Headache, fatigue, nausea, dizziness",
+    "price": "₹250-400 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med259",
+    "brandName": "Apixaban",
+    "genericName": "Apixaban",
+    "dosage": "2.5 mg",
+    "category": "General",
+    "uses": "Prevents blood clots in CKD",
+    "sideEffects": "Bleeding, nausea",
+    "price": "₹500-700 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med428",
+    "brandName": "Pradaxa",
+    "genericName": "Dabigatran",
+    "dosage": "150 mg",
+    "category": "Neurological",
+    "uses": "Prevents stroke, blood clots",
+    "sideEffects": "Bleeding, upset stomach",
+    "price": "₹250-300 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1026",
+    "brandName": "Prednisolone 5mg",
+    "genericName": "Prednisolone",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Anti-inflammatory for pneumonia complications",
+    "sideEffects": "Weight gain, mood swings, increased blood sugar",
+    "price": "₹20-40 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med277",
+    "brandName": "Cifran",
+    "genericName": "Ciprofloxacin",
+    "dosage": "500 mg",
+    "category": "Antibiotic",
+    "uses": "Urinary tract infections",
+    "sideEffects": "Nausea, diarrhea",
+    "price": "₹50-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1105",
+    "brandName": "Cefixime 200mg",
+    "genericName": "Cefixime",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Antibiotic for Cholera treatment",
+    "sideEffects": "Nausea, diarrhea, headache, rash",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1116",
+    "brandName": "Ibuprofen 200mg",
+    "genericName": "Ibuprofen",
+    "dosage": "1 tablet every 6-8 hours",
+    "category": "Painkiller",
+    "uses": "Pain relief and inflammation reduction",
+    "sideEffects": "Nausea, dizziness, gastrointestinal issues",
+    "price": "₹20-40 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med670",
+    "brandName": "Metocard XL",
+    "genericName": "Metoprolol Succinate",
+    "dosage": "50 mg",
+    "category": "Cardiovascular",
+    "uses": "Manages high BP, angina",
+    "sideEffects": "Fatigue, dizziness",
+    "price": "₹50-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med619",
+    "brandName": "Monit-GTN SR",
+    "genericName": "Nitroglycerin",
+    "dosage": "6.4 mg",
+    "category": "Cardiovascular",
+    "uses": "Manages angina",
+    "sideEffects": "Headache, low blood pressure",
+    "price": "₹70-90 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1046",
+    "brandName": "Raltegravir 400mg",
+    "genericName": "Raltegravir",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "Integrase inhibitor for HIV/AIDS treatment",
+    "sideEffects": "Nausea, headache, dizziness, insomnia",
+    "price": "₹250-350 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med247",
+    "brandName": "Tacrolimus",
+    "genericName": "Tacrolimus",
+    "dosage": "0.5 mg",
+    "category": "General",
+    "uses": "Immunosuppressant for transplants",
+    "sideEffects": "Tremors, high BP",
+    "price": "₹800-1000 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1259",
+    "brandName": "Bricanyl 0.5mg",
+    "genericName": "Terbutaline",
+    "dosage": "1 tablet every 12 hours",
+    "category": "General",
+    "uses": "Used for asthma and COPD",
+    "sideEffects": "Nervousness, tremors, palpitations",
+    "price": "₹30-70 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med733",
+    "brandName": "Olmat Max",
+    "genericName": "Olmesartan + Amlodipine + Hydrochlorothiazide",
+    "dosage": "40 mg/5 mg/12.5 mg",
+    "category": "General",
+    "uses": "Treats high BP",
+    "sideEffects": "Dizziness, dehydration",
+    "price": "₹120-150 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med582",
+    "brandName": "Rozucor",
+    "genericName": "Rosuvastatin",
+    "dosage": "10 mg",
+    "category": "Cardiovascular",
+    "uses": "Lowers cholesterol",
+    "sideEffects": "Muscle pain, dizziness",
+    "price": "₹30-50 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med464",
+    "brandName": "Tonact TG",
+    "genericName": "Atorvastatin + Fenofibrate",
+    "dosage": "10 mg/160 mg",
+    "category": "Cardiovascular",
+    "uses": "Lowers cholesterol, triglycerides",
+    "sideEffects": "Muscle pain, fatigue",
+    "price": "₹70-100 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1236",
+    "brandName": "Nicotinamide 500mg",
+    "genericName": "Niacinamide (Vitamin B3)",
+    "dosage": "1 tablet daily",
+    "category": "Supplement",
+    "uses": "Used for Pellagra and Vitamin B3 deficiency",
+    "sideEffects": "Skin rash, nausea, liver toxicity at high doses",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med704",
+    "brandName": "Tazloc-AM",
+    "genericName": "Telmisartan + Amlodipine",
+    "dosage": "40 mg/5 mg",
+    "category": "General",
+    "uses": "Controls high BP",
+    "sideEffects": "Fatigue, dizziness",
+    "price": "₹70-100 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1040",
+    "brandName": "Ritonavir 100mg",
+    "genericName": "Ritonavir",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "Boosts effect of other antiretrovirals",
+    "sideEffects": "Nausea, diarrhea, abdominal pain, fatigue",
+    "price": "₹100-200 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med864",
+    "brandName": "Prednisolone",
+    "genericName": "Prednisolone",
+    "dosage": "5 mg",
+    "category": "General",
+    "uses": "Used for inflammation and autoimmune diseases",
+    "sideEffects": "Weight gain, high blood pressure",
+    "price": "₹20-30 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med051",
+    "brandName": "Oleanz 5mg",
+    "genericName": "Olanzapine",
+    "dosage": "5mg",
+    "category": "Antipsychotic",
+    "uses": "Schizophrenia, bipolar disorder",
+    "sideEffects": "Weight gain, dizziness, drowsiness",
+    "price": "₹150-200 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1307",
+    "brandName": "Chenodeoxycholic Acid 250mg",
+    "genericName": "Chenodeoxycholic Acid",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Used to dissolve gallstones in patients without surgery",
+    "sideEffects": "Diarrhea, abdominal pain, nausea",
+    "price": "₹150-300 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med168",
+    "brandName": "Bacfen 10mg",
+    "genericName": "Baclofen",
+    "dosage": "10mg",
+    "category": "General",
+    "uses": "Muscle spasms, spasticity",
+    "sideEffects": "Drowsiness, nausea, dizziness",
+    "price": "₹50-100 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1094",
+    "brandName": "Tetracycline 250mg",
+    "genericName": "Tetracycline",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "Antimalarial for Plasmodium vivax and malaria treatment",
+    "sideEffects": "Nausea, vomiting, photosensitivity",
+    "price": "₹10-30 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1113",
+    "brandName": "Bismuth Subsalicylate 262mg",
+    "genericName": "Bismuth Subsalicylate",
+    "dosage": "2 tablets every half hour for diarrhea",
+    "category": "General",
+    "uses": "Antidiarrheal for Cholera symptoms",
+    "sideEffects": "Constipation, darkened stool, nausea",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med765",
+    "brandName": "Clarithromycin",
+    "genericName": "Clarithromycin",
+    "dosage": "250 mg",
+    "category": "Antibiotic",
+    "uses": "Treats respiratory tract infections",
+    "sideEffects": "Nausea, diarrhea",
+    "price": "₹3000 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med363",
+    "brandName": "Rosuvastatin",
+    "genericName": "Rosuvastatin Calcium",
+    "dosage": "40 mg",
+    "category": "Cardiovascular",
+    "uses": "Cholesterol control in CKD",
+    "sideEffects": "Muscle pain, headache",
+    "price": "₹100-150 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med261",
+    "brandName": "Alfacalcidol",
+    "genericName": "Alfacalcidol",
+    "dosage": "1 mcg",
+    "category": "Supplement",
+    "uses": "Vitamin D deficiency in CKD",
+    "sideEffects": "Hypercalcemia, fatigue",
+    "price": "₹300-400 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med946",
+    "brandName": "Neurobion Forte",
+    "genericName": "Vitamin B1, B6, B12",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Supports nerve health, helps in nerve regeneration",
+    "sideEffects": "Nausea, upset stomach, dizziness",
+    "price": "₹30-60 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med591",
+    "brandName": "Tenoric-H",
+    "genericName": "Atenolol + Hydrochlorothiazide",
+    "dosage": "50 mg/12.5 mg",
+    "category": "General",
+    "uses": "Manages high BP",
+    "sideEffects": "Fatigue, dizziness",
+    "price": "₹60-90 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med528",
+    "brandName": "Cilamet",
+    "genericName": "Cilnidipine + Metformin",
+    "dosage": "10 mg/500 mg",
+    "category": "Antidiabetic",
+    "uses": "Treats high BP, diabetes",
+    "sideEffects": "Dizziness, nausea",
+    "price": "₹70-100 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med892",
+    "brandName": "Lornoxicam",
+    "genericName": "Lornoxicam",
+    "dosage": "8 mg",
+    "category": "Painkiller",
+    "uses": "For pain and inflammation",
+    "sideEffects": "Nausea, dizziness, stomach upset",
+    "price": "₹40-60 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med429",
+    "brandName": "Torvate",
+    "genericName": "Sodium Valproate",
+    "dosage": "500 mg",
+    "category": "General",
+    "uses": "Manages arrhythmias",
+    "sideEffects": "Drowsiness, weight gain",
+    "price": "₹50-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med309",
+    "brandName": "Vitamin D3",
+    "genericName": "Cholecalciferol",
+    "dosage": "60000 IU",
+    "category": "Supplement",
+    "uses": "Vitamin D supplementation",
+    "sideEffects": "Hypercalcemia, nausea",
+    "price": "₹50-100 per dose per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med123",
+    "brandName": "Risnia 1mg",
+    "genericName": "Risperidone",
+    "dosage": "1mg",
+    "category": "Antipsychotic",
+    "uses": "Schizophrenia, bipolar disorder",
+    "sideEffects": "Drowsiness, weight gain, dry mouth",
+    "price": "₹100-150 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med964",
+    "brandName": "Hifenac",
+    "genericName": "Ibuprofen",
+    "dosage": "1 tablet daily",
+    "category": "Painkiller",
+    "uses": "Pain relief, inflammation management",
+    "sideEffects": "Stomach upset, dizziness, nausea",
+    "price": "₹10-20 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1219",
+    "brandName": "Ostovit-D3",
+    "genericName": "Vitamin D3",
+    "dosage": "1 tablet daily",
+    "category": "Supplement",
+    "uses": "Vitamin D3 supplement for rickets and bone health",
+    "sideEffects": "Nausea, vomiting, hypercalcemia",
+    "price": "₹30-80 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med881",
+    "brandName": "Naproxen",
+    "genericName": "Naproxen",
+    "dosage": "250 mg",
+    "category": "Painkiller",
+    "uses": "For arthritis, pain, inflammation",
+    "sideEffects": "Stomach upset, heartburn, dizziness",
+    "price": "₹50-80 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med203",
+    "brandName": "Esomeprazole",
+    "genericName": "Esomeprazole Magnesium",
+    "dosage": "20 mg",
+    "category": "General",
+    "uses": "Acid reflux in CKD",
+    "sideEffects": "Nausea, headache",
+    "price": "₹100-120 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1398",
+    "brandName": "Pramipexole 0.125mg",
+    "genericName": "Pramipexole",
+    "dosage": "1 tablet 3 times daily",
+    "category": "General",
+    "uses": "For motor symptoms and tremors",
+    "sideEffects": "Nausea, dizziness, sleep disturbances",
+    "price": "₹60-200 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med549",
+    "brandName": "Listril",
+    "genericName": "Lisinopril",
+    "dosage": "5 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats high BP, heart failure",
+    "sideEffects": "Dizziness, dry cough",
+    "price": "₹30-50 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1159",
+    "brandName": "Citalopram 20mg",
+    "genericName": "Citalopram",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Used for depression and anxiety disorders",
+    "sideEffects": "Nausea, dizziness, drowsiness, sexual side effects",
+    "price": "₹60-120 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1243",
+    "brandName": "Becozinc",
+    "genericName": "Vitamin B Complex + Zinc",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Used for Pellagra and overall health",
+    "sideEffects": "Upset stomach, dizziness, mild nausea",
+    "price": "₹30-80 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med777",
+    "brandName": "Pyrazinamide",
+    "genericName": "Pyrazinamide",
+    "dosage": "750 mg",
+    "category": "General",
+    "uses": "Second-line TB treatment",
+    "sideEffects": "Liver toxicity",
+    "price": "₹3000 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1033",
+    "brandName": "Montelukast 10mg",
+    "genericName": "Montelukast",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Leukotriene receptor antagonist for pneumonia",
+    "sideEffects": "Nausea, headache, stomach pain",
+    "price": "₹30-60 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med588",
+    "brandName": "Sorbitrate",
+    "genericName": "Isosorbide Dinitrate",
+    "dosage": "10 mg",
+    "category": "Cardiovascular",
+    "uses": "Relieves angina",
+    "sideEffects": "Headache, dizziness",
+    "price": "₹40-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med744",
+    "brandName": "Rosuvas CV",
+    "genericName": "Rosuvastatin + Clopidogrel + Aspirin",
+    "dosage": "10 mg/75 mg/150 mg",
+    "category": "Cardiovascular",
+    "uses": "Prevents clots, reduces cholesterol",
+    "sideEffects": "Bleeding, nausea",
+    "price": "₹150-200 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med192",
+    "brandName": "Rifaximin",
+    "genericName": "Rifaximin",
+    "dosage": "400 mg",
+    "category": "General",
+    "uses": "Reduces ammonia in CKD",
+    "sideEffects": "Nausea, bloating",
+    "price": "₹500-600 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med339",
+    "brandName": "Leflunomide",
+    "genericName": "Leflunomide",
+    "dosage": "20 mg",
+    "category": "General",
+    "uses": "Immunosuppressant for nephritis",
+    "sideEffects": "Diarrhea, rash",
+    "price": "₹200-300 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1344",
+    "brandName": "Vitamin D 1000 IU",
+    "genericName": "Vitamin D",
+    "dosage": "1 tablet daily",
+    "category": "Supplement",
+    "uses": "Supplement for deficiency in lupus",
+    "sideEffects": "Nausea, constipation, hypercalcemia",
+    "price": "₹10-30 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med289",
+    "brandName": "Pheniramine Maleate",
+    "genericName": "Pheniramine Maleate",
+    "dosage": "25 mg",
+    "category": "General",
+    "uses": "Allergies and itching in CKD",
+    "sideEffects": "Drowsiness, dry mouth",
+    "price": "₹10-20 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1096",
+    "brandName": "Tetracycline 250mg",
+    "genericName": "Tetracycline",
+    "dosage": "1 tablet four times daily",
+    "category": "General",
+    "uses": "Antibiotic for Cholera treatment",
+    "sideEffects": "Nausea, vomiting, photosensitivity, dizziness",
+    "price": "₹10-20 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1355",
+    "brandName": "Metformin 500mg",
+    "genericName": "Metformin",
+    "dosage": "1 tablet twice daily",
+    "category": "Antidiabetic",
+    "uses": "Reduces blood sugar in Type 1 diabetes",
+    "sideEffects": "Nausea, diarrhea, vitamin B12 deficiency",
+    "price": "₹30-50 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med029",
+    "brandName": "Parkin Tablet",
+    "genericName": "Trihexyphenidyl",
+    "dosage": "2mg",
+    "category": "General",
+    "uses": "Parkinson's disease",
+    "sideEffects": "Dry mouth, blurred vision, dizziness",
+    "price": "₹50-80 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med486",
+    "brandName": "Nitroquick",
+    "genericName": "Nitroglycerin",
+    "dosage": "0.3 mg",
+    "category": "Cardiovascular",
+    "uses": "Manages angina",
+    "sideEffects": "Headache, low blood pressure",
+    "price": "₹50-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med076",
+    "brandName": "Xet CR 12.5mg",
+    "genericName": "Paroxetine",
+    "dosage": "12.5mg",
+    "category": "General",
+    "uses": "Depression, anxiety",
+    "sideEffects": "Dizziness, nausea, dry mouth",
+    "price": "₹150-200 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med903",
+    "brandName": "Statkes Gold Capsule",
+    "genericName": "Aspirin + Rosuvastatin + Clopidogrel",
+    "dosage": "75mg/75mg/20mg",
+    "category": "Cardiovascular",
+    "uses": "Stroke prevention, heart health",
+    "sideEffects": "Stomach pain, indigestion, diarrhea",
+    "price": "₹250 for 10 capsules per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med065",
+    "brandName": "Venlor XR 75mg",
+    "genericName": "Venlafaxine",
+    "dosage": "75mg",
+    "category": "General",
+    "uses": "Depression, anxiety",
+    "sideEffects": "Dizziness, dry mouth, fatigue",
+    "price": "₹200-250 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1146",
+    "brandName": "Vincristine 1mg",
+    "genericName": "Vincristine",
+    "dosage": "1 infusion weekly",
+    "category": "General",
+    "uses": "Chemotherapy for various cancers",
+    "sideEffects": "Hair loss, nausea, constipation, low blood count",
+    "price": "₹300-600 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med583",
+    "brandName": "Isordil",
+    "genericName": "Isosorbide Dinitrate",
+    "dosage": "5 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats angina",
+    "sideEffects": "Dizziness, headache",
+    "price": "₹50-80 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med882",
+    "brandName": "Diclofenac",
+    "genericName": "Diclofenac",
+    "dosage": "50 mg",
+    "category": "Painkiller",
+    "uses": "NSAID for pain and inflammation",
+    "sideEffects": "Stomach upset, dizziness, headache",
+    "price": "₹10-20 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med948",
+    "brandName": "Lyrica",
+    "genericName": "Pregabalin",
+    "dosage": "1 capsule daily",
+    "category": "Painkiller",
+    "uses": "Pain management, nerve pain relief",
+    "sideEffects": "Drowsiness, dizziness, weight gain",
+    "price": "₹150-300 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med858",
+    "brandName": "Betamethasone",
+    "genericName": "Betamethasone",
+    "dosage": "0.5 mg",
+    "category": "Antibiotic",
+    "uses": "Reduces swelling in throat infections",
+    "sideEffects": "Skin thinning, dizziness",
+    "price": "₹100 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med551",
+    "brandName": "Roseday Gold",
+    "genericName": "Rosuvastatin + Aspirin + Clopidogrel",
+    "dosage": "10 mg/75 mg/75 mg",
+    "category": "Cardiovascular",
+    "uses": "Reduces cholesterol, prevents clots",
+    "sideEffects": "Stomach upset, bleeding",
+    "price": "₹200-250 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1374",
+    "brandName": "Azithromycin 250mg",
+    "genericName": "Azithromycin",
+    "dosage": "1 tablet daily",
+    "category": "Antibiotic",
+    "uses": "For respiratory infections",
+    "sideEffects": "Nausea, diarrhea, abdominal pain",
+    "price": "₹50-150 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med478",
+    "brandName": "Angitel LN",
+    "genericName": "Telmisartan + Cilnidipine",
+    "dosage": "40 mg",
+    "category": "General",
+    "uses": "Treats high BP",
+    "sideEffects": "Dizziness, fatigue",
+    "price": "₹80-100 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med836",
+    "brandName": "Amoxicillin",
+    "genericName": "Amoxicillin",
+    "dosage": "500 mg",
+    "category": "General",
+    "uses": "Treats bacterial sinusitis",
+    "sideEffects": "Diarrhea, headache",
+    "price": "₹250 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1042",
+    "brandName": "Darunavir 600mg",
+    "genericName": "Darunavir",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "Protease inhibitor for HIV/AIDS treatment",
+    "sideEffects": "Diarrhea, nausea, headache, fatigue",
+    "price": "₹500-700 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1196",
+    "brandName": "Fluoxetine 20mg",
+    "genericName": "Fluoxetine",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Used for OCD, depression, and anxiety",
+    "sideEffects": "Nausea, insomnia, headache, sexual dysfunction",
+    "price": "₹40-80 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med493",
+    "brandName": "Teleact CH",
+    "genericName": "Telmisartan + Chlorthalidone",
+    "dosage": "40 mg",
+    "category": "General",
+    "uses": "Treats high BP",
+    "sideEffects": "Dizziness, dehydration",
+    "price": "₹60-90 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med626",
+    "brandName": "Nicogard SR",
+    "genericName": "Nicorandil",
+    "dosage": "10 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats angina",
+    "sideEffects": "Headache, dizziness",
+    "price": "₹60-90 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med044",
+    "brandName": "Aricep 5mg",
+    "genericName": "Donepezil",
+    "dosage": "5mg",
+    "category": "General",
+    "uses": "Alzheimer's disease",
+    "sideEffects": "Nausea, diarrhea, insomnia",
+    "price": "₹150-200 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med059",
+    "brandName": "Valance OD 500mg",
+    "genericName": "Divalproex Sodium",
+    "dosage": "500mg",
+    "category": "Antipsychotic",
+    "uses": "Epilepsy, bipolar disorder",
+    "sideEffects": "Nausea, weight gain, tremors",
+    "price": "₹150-200 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med023",
+    "brandName": "Pramipex 0.25mg",
+    "genericName": "Pramipexole",
+    "dosage": "0.25mg",
+    "category": "General",
+    "uses": "Parkinson's disease, restless legs syndrome",
+    "sideEffects": "Nausea, dizziness, dry mouth, hallucinations",
+    "price": "₹100-150 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1403",
+    "brandName": "Levetiracetam 500mg",
+    "genericName": "Levetiracetam",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "For managing seizures",
+    "sideEffects": "Drowsiness, headache, irritability",
+    "price": "₹100-200 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med381",
+    "brandName": "Nebicard",
+    "genericName": "Nebivolol",
+    "dosage": "5 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats high blood pressure, heart failure",
+    "sideEffects": "Fatigue, headache",
+    "price": "₹50-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med115",
+    "brandName": "Amixide 10mg",
+    "genericName": "Amitriptyline",
+    "dosage": "10mg",
+    "category": "General",
+    "uses": "Depression, migraine prevention",
+    "sideEffects": "Drowsiness, dry mouth, weight gain",
+    "price": "₹50-100 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med342",
+    "brandName": "Micronized Progesterone",
+    "genericName": "Progesterone",
+    "dosage": "200 mg",
+    "category": "Renal",
+    "uses": "Hormonal support in kidney issues",
+    "sideEffects": "Nausea, headache",
+    "price": "₹300-400 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1063",
+    "brandName": "Alfa-Interferon 3 million IU",
+    "genericName": "Alfa-Interferon",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Immunotherapy for Hepatitis B and C treatment",
+    "sideEffects": "Flu-like symptoms, fatigue, headache, muscle pain",
+    "price": "₹1000-1500 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med398",
+    "brandName": "Lipicure",
+    "genericName": "Atorvastatin",
+    "dosage": "10 mg",
+    "category": "Cardiovascular",
+    "uses": "Reduces cholesterol levels",
+    "sideEffects": "Muscle pain, nausea",
+    "price": "₹30-50 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1067",
+    "brandName": "Zidovudine 300mg",
+    "genericName": "Zidovudine",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "Antiretroviral for Hepatitis B and HIV treatment",
+    "sideEffects": "Nausea, fatigue, anemia, dizziness",
+    "price": "₹40-60 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med433",
+    "brandName": "Aztor",
+    "genericName": "Atorvastatin",
+    "dosage": "10 mg",
+    "category": "Cardiovascular",
+    "uses": "Lowers cholesterol levels",
+    "sideEffects": "Muscle pain, fatigue",
+    "price": "₹40-60 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med270",
+    "brandName": "Renvela",
+    "genericName": "Sevelamer Carbonate",
+    "dosage": "800 mg",
+    "category": "General",
+    "uses": "Phosphate binder for CKD",
+    "sideEffects": "Bloating, nausea",
+    "price": "₹500-600 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med809",
+    "brandName": "Ofloxacin",
+    "genericName": "Ofloxacin",
+    "dosage": "200 mg",
+    "category": "Antibiotic",
+    "uses": "Treats bacterial infections",
+    "sideEffects": "Nausea, dizziness",
+    "price": "₹400 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med607",
+    "brandName": "Telzom H",
+    "genericName": "Telmisartan + Hydrochlorothiazide",
+    "dosage": "40 mg/12.5 mg",
+    "category": "General",
+    "uses": "Treats high BP",
+    "sideEffects": "Dizziness, dehydration",
+    "price": "₹60-90 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med970",
+    "brandName": "Clindamycin 300mg",
+    "genericName": "Clindamycin",
+    "dosage": "1 tablet every 8 hours",
+    "category": "Antibiotic",
+    "uses": "Antibiotic for dental infections",
+    "sideEffects": "Diarrhea, nausea, rash",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med736",
+    "brandName": "Vymada 100",
+    "genericName": "Sacubitril + Valsartan",
+    "dosage": "50 mg/51 mg",
+    "category": "Cardiovascular",
+    "uses": "Manages chronic heart failure",
+    "sideEffects": "Fatigue, dizziness",
+    "price": "₹300-350 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med807",
+    "brandName": "Clarithromycin",
+    "genericName": "Clarithromycin",
+    "dosage": "250 mg",
+    "category": "Antibiotic",
+    "uses": "Treats ear infections",
+    "sideEffects": "Stomach upset, headache",
+    "price": "₹300 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med365",
+    "brandName": "Dapagliflozin",
+    "genericName": "Dapagliflozin",
+    "dosage": "10 mg",
+    "category": "Antidiabetic",
+    "uses": "Diabetes management in CKD",
+    "sideEffects": "Dehydration, dizziness",
+    "price": "₹300-500 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1319",
+    "brandName": "Lansoprazole 30mg",
+    "genericName": "Lansoprazole",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Reduces stomach acid in GERD",
+    "sideEffects": "Headache, abdominal pain, diarrhea",
+    "price": "₹30-60 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med078",
+    "brandName": "Trazalon 50mg",
+    "genericName": "Trazodone",
+    "dosage": "50mg",
+    "category": "General",
+    "uses": "Depression, insomnia",
+    "sideEffects": "Drowsiness, dizziness, dry mouth",
+    "price": "₹100-150 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med244",
+    "brandName": "Hydroxychloroquine",
+    "genericName": "Hydroxychloroquine Sulfate",
+    "dosage": "200 mg",
+    "category": "General",
+    "uses": "Autoimmune nephritis management",
+    "sideEffects": "Nausea, vision changes",
+    "price": "₹150-200 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1167",
+    "brandName": "Clonazepam 0.5mg",
+    "genericName": "Clonazepam",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Used for anxiety and panic disorders",
+    "sideEffects": "Drowsiness, dizziness, memory problems, fatigue",
+    "price": "₹10-30 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1142",
+    "brandName": "Capecitabine 500mg",
+    "genericName": "Capecitabine",
+    "dosage": "2 tablets twice daily",
+    "category": "General",
+    "uses": "Used in colon and breast cancer treatment",
+    "sideEffects": "Nausea, diarrhea, fatigue, mouth sores",
+    "price": "₹500-1000 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med679",
+    "brandName": "Stamlo 2.5",
+    "genericName": "Amlodipine",
+    "dosage": "2.5 mg",
+    "category": "Cardiovascular",
+    "uses": "Controls high BP, angina",
+    "sideEffects": "Dizziness, swelling",
+    "price": "₹20-30 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med782",
+    "brandName": "Cefuroxime",
+    "genericName": "Cefuroxime",
+    "dosage": "250 mg",
+    "category": "Antibiotic",
+    "uses": "Treats lung infections",
+    "sideEffects": "Headache, nausea",
+    "price": "₹4000 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med416",
+    "brandName": "Nexovas",
+    "genericName": "Cilnidipine",
+    "dosage": "5 mg",
+    "category": "Antihypertensive",
+    "uses": "Treats high blood pressure",
+    "sideEffects": "Dizziness, fatigue",
+    "price": "₹40-60 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med141",
+    "brandName": "Admenta 10mg",
+    "genericName": "Memantine",
+    "dosage": "10mg",
+    "category": "General",
+    "uses": "Alzheimer's disease",
+    "sideEffects": "Dizziness, headache, constipation",
+    "price": "₹150-200 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med070",
+    "brandName": "Tryptomer 10mg",
+    "genericName": "Amitriptyline",
+    "dosage": "10mg",
+    "category": "General",
+    "uses": "Depression, migraine prevention",
+    "sideEffects": "Drowsiness, dry mouth, weight gain",
+    "price": "₹50-80 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med015",
+    "brandName": "Frisium 10mg",
+    "genericName": "Clobazam",
+    "dosage": "10mg",
+    "category": "General",
+    "uses": "Anxiety, epilepsy",
+    "sideEffects": "Drowsiness, confusion, fatigue, withdrawal symptoms",
+    "price": "₹100-150 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1195",
+    "brandName": "Divalproex Sodium 500mg",
+    "genericName": "Divalproex Sodium",
+    "dosage": "1 tablet daily",
+    "category": "Antipsychotic",
+    "uses": "Used in bipolar disorder and seizures",
+    "sideEffects": "Weight gain, dizziness, nausea, drowsiness",
+    "price": "₹150-300 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1066",
+    "brandName": "TDF (Tenofovir Disoproxil Fumarate) 300mg",
+    "genericName": "Tenofovir Disoproxil Fumarate",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Antiviral for Hepatitis B treatment",
+    "sideEffects": "Nausea, headache, diarrhea, kidney damage",
+    "price": "₹150-250 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1023",
+    "brandName": "Trimethoprim + Sulfamethoxazole",
+    "genericName": "Trimethoprim + Sulfamethoxazole",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "Antibiotic for pneumonia (especially for Pneumocystis jirovecii)",
+    "sideEffects": "Nausea, rash, allergic reaction",
+    "price": "₹50-90 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med958",
+    "brandName": "Neurogen",
+    "genericName": "Methylcobalamin + Vitamin B6, B12",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Nerve health and regeneration",
+    "sideEffects": "Nausea, headache, allergic reaction",
+    "price": "₹50-70 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med930",
+    "brandName": "Himalaya Liv 52",
+    "genericName": "Herbal (Liver Support)",
+    "dosage": "1 tablet",
+    "category": "General",
+    "uses": "Liver health, digestion support",
+    "sideEffects": "Mild nausea, allergic reaction in rare cases",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1268",
+    "brandName": "Ipramol 0.5mg",
+    "genericName": "Ipratropium",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "COPD treatment",
+    "sideEffects": "Dry mouth, dizziness, blurred vision",
+    "price": "₹100-200 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med578",
+    "brandName": "Olmighty H",
+    "genericName": "Olmesartan + Hydrochlorothiazide",
+    "dosage": "40 mg/12.5 mg",
+    "category": "General",
+    "uses": "Treats high BP",
+    "sideEffects": "Dizziness, dehydration",
+    "price": "₹60-90 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med422",
+    "brandName": "Prolomet XL",
+    "genericName": "Metoprolol Succinate",
+    "dosage": "25 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats high BP, angina",
+    "sideEffects": "Fatigue, dizziness",
+    "price": "₹50-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med885",
+    "brandName": "Tocilizumab (Injection)",
+    "genericName": "Tocilizumab",
+    "dosage": "80 mg",
+    "category": "General",
+    "uses": "Biologic for RA, juvenile arthritis",
+    "sideEffects": "Headache, hypertension, infection",
+    "price": "₹12,000-15,000 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med813",
+    "brandName": "Ibuprofen",
+    "genericName": "Ibuprofen",
+    "dosage": "400 mg",
+    "category": "Painkiller",
+    "uses": "Relieves ear pain",
+    "sideEffects": "Stomach pain, nausea",
+    "price": "₹30 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med526",
+    "brandName": "Razel F",
+    "genericName": "Rosuvastatin + Fenofibrate",
+    "dosage": "10 mg/160 mg",
+    "category": "Cardiovascular",
+    "uses": "Lowers cholesterol",
+    "sideEffects": "Muscle pain, nausea",
+    "price": "₹60-100 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med303",
+    "brandName": "Norfloxacin",
+    "genericName": "Norfloxacin",
+    "dosage": "400 mg",
+    "category": "Renal",
+    "uses": "UTI management in kidney patients",
+    "sideEffects": "Nausea, headache",
+    "price": "₹50-80 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1318",
+    "brandName": "Ranitidine 150mg",
+    "genericName": "Ranitidine",
+    "dosage": "1 tablet twice daily",
+    "category": "General",
+    "uses": "Reduces acid production in GERD",
+    "sideEffects": "Headache, dizziness, constipation",
+    "price": "₹20-40 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1311",
+    "brandName": "Corticosteroids (Prednisolone)",
+    "genericName": "Prednisolone",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Used during flare-ups of Celiac disease",
+    "sideEffects": "Weight gain, increased appetite, mood changes",
+    "price": "₹30-60 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med427",
+    "brandName": "Xarelto",
+    "genericName": "Rivaroxaban",
+    "dosage": "10 mg",
+    "category": "General",
+    "uses": "Prevents blood clots",
+    "sideEffects": "Bleeding, nausea",
+    "price": "₹150-200 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med792",
+    "brandName": "Carboplatin",
+    "genericName": "Carboplatin",
+    "dosage": "150 mg",
+    "category": "General",
+    "uses": "Lung cancer chemotherapy",
+    "sideEffects": "Fatigue, nausea",
+    "price": "₹60000 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med843",
+    "brandName": "Amoxicillin",
+    "genericName": "Amoxicillin",
+    "dosage": "500 mg",
+    "category": "Antibiotic",
+    "uses": "Treats bacterial throat infections",
+    "sideEffects": "Diarrhea, headache",
+    "price": "₹250 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med979",
+    "brandName": "Voveran 75",
+    "genericName": "Diclofenac sodium",
+    "dosage": "1 tablet twice daily",
+    "category": "Painkiller",
+    "uses": "Pain relief, inflammation reduction",
+    "sideEffects": "Stomach upset, dizziness, nausea",
+    "price": "₹50-100 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med274",
+    "brandName": "Tizanidine",
+    "genericName": "Tizanidine Hydrochloride",
+    "dosage": "2 mg",
+    "category": "General",
+    "uses": "Muscle spasticity in CKD",
+    "sideEffects": "Drowsiness, dry mouth",
+    "price": "₹50-100 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med439",
+    "brandName": "Epitril",
+    "genericName": "Clonazepam",
+    "dosage": "0.5 mg",
+    "category": "General",
+    "uses": "Treats arrhythmias",
+    "sideEffects": "Drowsiness, fatigue",
+    "price": "₹40-60 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med350",
+    "brandName": "Minoxidil",
+    "genericName": "Minoxidil",
+    "dosage": "10 mg",
+    "category": "General",
+    "uses": "Severe hypertension treatment",
+    "sideEffects": "Fluid retention, dizziness",
+    "price": "₹500-700 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med721",
+    "brandName": "Nicostar",
+    "genericName": "Nicorandil",
+    "dosage": "5 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats chronic angina",
+    "sideEffects": "Headache, nausea",
+    "price": "₹50-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med921",
+    "brandName": "Lanzol Tablet",
+    "genericName": "Lansoprazole",
+    "dosage": "30mg",
+    "category": "General",
+    "uses": "Acid reflux, ulcers",
+    "sideEffects": "Fatigue, joint pain",
+    "price": "₹140 for 10 tablets per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med451",
+    "brandName": "Nikoran",
+    "genericName": "Nicorandil",
+    "dosage": "5 mg",
+    "category": "Cardiovascular",
+    "uses": "Treats angina",
+    "sideEffects": "Headache, dizziness",
+    "price": "₹50-70 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1182",
+    "brandName": "Fluphenazine 2mg",
+    "genericName": "Fluphenazine",
+    "dosage": "1 tablet daily",
+    "category": "Antipsychotic",
+    "uses": "Antipsychotic for schizophrenia",
+    "sideEffects": "Sedation, dizziness, tremors, weight gain",
+    "price": "₹20-50 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med043",
+    "brandName": "Restyl 0.5mg",
+    "genericName": "Alprazolam",
+    "dosage": "0.5mg",
+    "category": "General",
+    "uses": "Anxiety, insomnia",
+    "sideEffects": "Drowsiness, fatigue, memory problems",
+    "price": "₹50-100 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1181",
+    "brandName": "Clozapine 100mg",
+    "genericName": "Clozapine",
+    "dosage": "1 tablet daily",
+    "category": "Antipsychotic",
+    "uses": "Used for treatment-resistant schizophrenia",
+    "sideEffects": "Sedation, weight gain, drowsiness, agranulocytosis",
+    "price": "₹300-800 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med1260",
+    "brandName": "Montair 10mg",
+    "genericName": "Montelukast",
+    "dosage": "1 tablet daily",
+    "category": "General",
+    "uses": "Prevents asthma and allergic rhinitis symptoms",
+    "sideEffects": "Headache, dizziness, abdominal discomfort",
+    "price": "₹10-30 INR per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med332",
+    "brandName": "Etoricoxib",
+    "genericName": "Etoricoxib",
+    "dosage": "90 mg",
+    "category": "Renal",
+    "uses": "Pain relief in kidney disorders",
+    "sideEffects": "Nausea, dizziness",
+    "price": "₹100-150 per strip per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med915",
+    "brandName": "Drotin Tablet",
+    "genericName": "Drotaverine",
+    "dosage": "80mg",
+    "category": "Painkiller",
+    "uses": "Abdominal pain",
+    "sideEffects": "Dry mouth, weakness",
+    "price": "₹90 for 10 tablets per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med101",
+    "brandName": "Syndopa 250mg",
+    "genericName": "Levodopa + Carbidopa",
+    "dosage": "250mg",
+    "category": "General",
+    "uses": "Parkinson's disease",
+    "sideEffects": "Nausea, dry mouth, dizziness",
+    "price": "₹50-100 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  },
+  {
+    "id": "med107",
+    "brandName": "Qutipin 100mg",
+    "genericName": "Quetiapine",
+    "dosage": "100mg",
+    "category": "Antipsychotic",
+    "uses": "Schizophrenia, bipolar disorder",
+    "sideEffects": "Weight gain, dizziness, dry mouth",
+    "price": "₹200-300 per strip",
+    "warnings": "Consult doctor before use. Side effects vary per patient.",
+    "language": [
+      "English",
+      "Tamil"
+    ]
+  }, {
+    "id": "med001",
+    "brandName": "Paracetamol 500mg",
+    "genericName": "Acetaminophen",
+    "dosage": "500mg",
+    "category": "Painkiller",
+    "uses": "Fever, Mild to moderate pain",
+    "sideEffects": "Nausea, Allergic reactions (rare), Liver damage (with overdose)",
+    "price": "₹15 per strip of 10",
+    "warnings": "Do not exceed stated dose. Avoid alcohol. Consult doctor if symptoms persist.",
+    "language": ["English", "Tamil"]
+  },
+  {
+    "id": "med002",
+    "brandName": "Amoxicillin 250mg",
+    "genericName": "Amoxicillin",
+    "dosage": "250mg",
+    "category": "Antibiotic",
+    "uses": "Bacterial infections (e.g., ear, nose, throat, skin, urinary tract)",
+    "sideEffects": "Diarrhea, Nausea, Rash, Vomiting",
+    "price": "₹50 per strip of 10",
+    "warnings": "Complete the full course. Allergic reactions possible. Inform doctor of penicillin allergy.",
+    "language": ["English", "Tamil"]
+  },
+  {
+    "id": "med003",
+    "brandName": "Cetirizine 10mg",
+    "genericName": "Cetirizine Dihydrochloride",
+    "dosage": "10mg",
+    "category": "Antihistamine",
+    "uses": "Allergic rhinitis, Hay fever, Hives (urticaria)",
+    "sideEffects": "Drowsiness, Dry mouth, Fatigue, Headache",
+    "price": "₹20 per strip of 10",
+    "warnings": "May cause drowsiness. Avoid alcohol and operating heavy machinery.",
+    "language": ["English", "Tamil"]
+  },
+  {
+    "id": "med004",
+    "brandName": "Ibuprofen 400mg",
+    "genericName": "Ibuprofen",
+    "dosage": "400mg",
+    "category": "Painkiller",
+    "uses": "Pain relief, Fever reduction, Anti-inflammatory for conditions like arthritis",
+    "sideEffects": "Stomach upset, Heartburn, Nausea, Dizziness",
+    "price": "₹30 per strip of 10",
+    "warnings": "Take with food. Avoid if history of stomach ulcers or bleeding. Consult doctor if you have heart, liver or kidney problems.",
+    "language": ["English", "Tamil"]
+  },
+  {
+    "id": "med005",
+    "brandName": "Omeprazole 20mg",
+    "genericName": "Omeprazole",
+    "dosage": "20mg",
+    "category": "Antacid",
+    "uses": "Acid reflux, Heartburn, Stomach ulcers, Zollinger-Ellison syndrome",
+    "sideEffects": "Headache, Diarrhea, Stomach pain, Nausea",
+    "price": "₹60 per strip of 14",
+    "warnings": "Take before meals. Long-term use may have risks; consult doctor.",
+    "language": ["English", "Tamil"]
+  },
+  {
+    "id": "med006",
+    "brandName": "Metformin 500mg",
+    "genericName": "Metformin Hydrochloride",
+    "dosage": "500mg",
+    "category": "Antidiabetic",
+    "uses": "Type 2 diabetes mellitus",
+    "sideEffects": "Diarrhea, Nausea, Vomiting, Abdominal bloating, Gas",
+    "price": "₹25 per strip of 15",
+    "warnings": "Take with meals. Monitor kidney function. Risk of lactic acidosis (rare).",
+    "language": ["English", "Tamil"]
+  },
+  {
+    "id": "med007",
+    "brandName": "Amlodipine 5mg",
+    "genericName": "Amlodipine Besylate",
+    "dosage": "5mg",
+    "category": "Antihypertensive",
+    "uses": "High blood pressure (hypertension), Angina (chest pain)",
+    "sideEffects": "Swelling of ankles/feet, Dizziness, Flushing, Headache",
+    "price": "₹40 per strip of 10",
+    "warnings": "Monitor blood pressure regularly. Inform doctor of liver problems.",
+    "language": ["English", "Tamil"]
+  }
+]
