@@ -32,9 +32,16 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 
 ### 4. Run
 
+**Frontend (Terminal 1):**
 ```bash
 pnpm dev
 ```
-
 Access at `http://localhost:9002`
+
+**Backend/Genkit (Terminal 2):**
+```bash
+pnpm genkit:watch
+```
+
+Run both terminals simultaneously for full functionality.
 
