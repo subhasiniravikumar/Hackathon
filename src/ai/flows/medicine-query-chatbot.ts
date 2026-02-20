@@ -19,6 +19,16 @@ export type MedicineQueryChatbotInput = z.infer<typeof MedicineQueryChatbotInput
 
 const MedicineQueryChatbotOutputSchema = z.object({
   response: z.string().describe('The chatbot response to the user query.'),
+  medicineData: z.object({
+    brandName: z.string().optional(),
+    genericName: z.string().optional(),
+    dosage: z.string().optional(),
+    category: z.string().optional(),
+    uses: z.string().optional(),
+    sideEffects: z.string().optional(),
+    price: z.string().optional(),
+    isValidMedicine: z.boolean().describe('Whether this is actually medicine information'),
+  }).optional().describe('Structured medicine data if the query is about a specific medicine'),
 });
 export type MedicineQueryChatbotOutput = z.infer<typeof MedicineQueryChatbotOutputSchema>;
 
@@ -41,16 +51,32 @@ export async function medicineQueryChatbot(input: MedicineQueryChatbotInput): Pr
                 {
                   text: `You are a medical information assistant providing accurate, concise information about medicines.
 
-CRITICAL INSTRUCTIONS:
-- Provide CONCISE, factual answers (2-4 sentences maximum)
-- Double-check accuracy - medicine information must be precise
-- Use bullet points for lists (dosage, side effects, etc.)
-- State facts clearly without unnecessary elaboration
-- Always end with: "Consult a healthcare professional for personalized advice."
+TASK 1: Determine if the user is asking about a SPECIFIC MEDICINE (not general health questions).
+
+TASK 2: Provide a CONCISE response (2-4 sentences) with:
+- Bullet points for lists (dosage, side effects, etc.)
+- Accurate, factual information
+- End with: "Consult a healthcare professional for personalized advice."
+
+TASK 3: If asking about a specific medicine, extract structured data in this EXACT JSON format at the END of your response:
+---MEDICINE_DATA---
+{
+  "brandName": "Brand name",
+  "genericName": "Generic/chemical name",
+  "dosage": "Standard dosage",
+  "category": "Category (Painkiller/Antibiotic/etc)",
+  "uses": "What it treats",
+  "sideEffects": "Common side effects",
+  "price": "Price range in INR",
+  "isValidMedicine": true
+}
+---END_DATA---
+
+If NOT asking about a specific medicine, set isValidMedicine to false.
 
 User Query: ${input.query}
 
-Provide a brief, accurate response:`
+Provide your response:`
                 }
               ]
             }
@@ -69,8 +95,26 @@ Provide a brief, accurate response:`
     const aiResponse = responseData.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || 
       'I apologize, but I cannot provide a response at this moment. Please try again.';
     
+    // Extract structured medicine data if present
+    let medicineData = undefined;
+    const dataMatch = aiResponse.match(/---MEDICINE_DATA---([\s\S]*?)---END_DATA---/);
+    if (dataMatch) {
+      try {
+        const jsonData = JSON.parse(dataMatch[1].trim());
+        if (jsonData.isValidMedicine) {
+          medicineData = jsonData;
+        }
+      } catch (e) {
+        console.log('Could not parse medicine data:', e);
+      }
+    }
+    
+    // Remove the data markers from the visible response
+    const cleanResponse = aiResponse.replace(/---MEDICINE_DATA---[\s\S]*?---END_DATA---/g, '').trim();
+    
     return {
-      response: aiResponse
+      response: cleanResponse,
+      medicineData: medicineData
     };
   } catch (error) {
     console.error('Chatbot error:', error);

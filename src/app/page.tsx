@@ -10,6 +10,7 @@ import { VoiceInput } from '@/components/voice/VoiceInput';
 import { MedicineListDisplay } from '@/components/medicine/MedicineListDisplay';
 import { ChatbotInterface } from '@/components/chatbot/ChatbotInterface';
 import { TabletScannerDialog } from '@/components/tablet-scanner/TabletScannerDialog';
+import { AuthDialog } from '@/components/auth/AuthDialog';
 import type { Medicine } from '@/types/medicine';
 import { Button } from '@/components/ui/button';
 import { Bot, Search, Pill, Camera } from 'lucide-react'; // Added Camera icon
@@ -21,6 +22,8 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command"
+import { fuzzyMatch, getMedicineSimilarityScore } from '@/lib/fuzzy-search';
+import { useAuth } from '@/contexts/AuthContext';
 
 
 // Helper function to load medicine data
@@ -44,10 +47,12 @@ const QUICK_CATEGORIES = ["Painkiller", "Antibiotic", "Antihistamine", "Antacid"
 
 
 export default function Home() {
+  const { isAuthenticated } = useAuth();
   const [allMedicines, setAllMedicines] = useState<Medicine[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   const [isTabletScannerOpen, setIsTabletScannerOpen] = useState(false); // State for Tablet Scanner Dialog
+  const [showAuthDialog, setShowAuthDialog] = useState(false); // Auth dialog for AI features
   const [preferredVoiceLanguage, setPreferredVoiceLanguage] = useState('en-US'); // Default language
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [openCommand, setOpenCommand] = React.useState(false)
@@ -79,13 +84,17 @@ export default function Home() {
     if (!searchTerm && !activeCategory) return allMedicines.slice(0, 6); // Show some initial medicines
     if (!searchTerm && activeCategory) return medicinesToFilter; // Show all from category if no search term
 
-    const lowerSearchTerm = searchTerm.toLowerCase();
-    return medicinesToFilter.filter((medicine) =>
-      medicine.brandName.toLowerCase().includes(lowerSearchTerm) ||
-      medicine.genericName.toLowerCase().includes(lowerSearchTerm) ||
-      medicine.uses.toLowerCase().includes(lowerSearchTerm) ||
-      medicine.category.toLowerCase().includes(lowerSearchTerm)
-    );
+    // Use fuzzy matching for better speech recognition support
+    const matches = medicinesToFilter
+      .filter((medicine) => fuzzyMatch(medicine, searchTerm, 0.6))
+      .map((medicine) => ({
+        medicine,
+        score: getMedicineSimilarityScore(medicine, searchTerm)
+      }))
+      .sort((a, b) => b.score - a.score) // Sort by relevance
+      .map(({ medicine }) => medicine);
+
+    return matches;
   }, [allMedicines, searchTerm, activeCategory]);
 
   const handleSearchTermChange = (term: string) => {
@@ -101,7 +110,16 @@ export default function Home() {
   };
 
   const toggleChatbot = useCallback(() => {
+    if (!isAuthenticated) {
+      setShowAuthDialog(true);
+      return;
+    }
     setIsChatbotOpen((prev) => !prev);
+  }, [isAuthenticated]);
+
+  const handleMedicineAdded = useCallback(() => {
+    // Reload medicines when a new one is added via AI
+    loadMedicines().then(setAllMedicines);
   }, []);
 
   const handleCategoryClick = (category: string) => {
@@ -122,13 +140,17 @@ export default function Home() {
 
   const suggestedMedicines = useMemo(() => {
     if (!searchTerm) return [];
-    const lowerSearchTerm = searchTerm.toLowerCase();
+    
+    // Use fuzzy matching for suggestions
     return allMedicines
-      .filter((medicine) =>
-        medicine.brandName.toLowerCase().includes(lowerSearchTerm) ||
-        medicine.genericName.toLowerCase().includes(lowerSearchTerm)
-      )
-      .slice(0, 5); // Limit to top 5 suggestions
+      .filter((medicine) => fuzzyMatch(medicine, searchTerm, 0.5)) // Lower threshold for suggestions
+      .map((medicine) => ({
+        medicine,
+        score: getMedicineSimilarityScore(medicine, searchTerm)
+      }))
+      .sort((a, b) => b.score - a.score) // Sort by relevance
+      .slice(0, 5) // Limit to top 5 suggestions
+      .map(({ medicine }) => medicine);
   }, [searchTerm, allMedicines]);
 
 
@@ -147,7 +169,27 @@ export default function Home() {
           <Command className="mb-4">
               <CommandInput placeholder="Search medicines by name, use, category..." value={searchTerm} onValueChange={handleSearchTermChange} />
               <CommandList>
-                <CommandEmpty>No results found.</CommandEmpty>
+                <CommandEmpty>
+                  <div className="py-6 text-center">
+                    <p className="text-sm text-muted-foreground mb-3">No results found in our database.</p>
+                    <Button 
+                      onClick={() => {
+                        if (!isAuthenticated) {
+                          setOpenCommand(false);
+                          setShowAuthDialog(true);
+                          return;
+                        }
+                        setOpenCommand(false);
+                        toggleChatbot();
+                      }}
+                      variant="default"
+                      size="sm"
+                      className="bg-primary hover:bg-primary/90"
+                    >
+                      <Bot className="mr-2 h-4 w-4" /> Ask AI for Details
+                    </Button>
+                  </div>
+                </CommandEmpty>
                 {searchTerm && suggestedMedicines.length > 0 && (
                   <CommandGroup heading="Suggestions">
                     {suggestedMedicines.map((medicine) => (
@@ -172,9 +214,16 @@ export default function Home() {
               setGlobalSearchTerm={setSearchTerm}
               preferredLanguage={preferredVoiceLanguage}
               onPreferredLanguageChange={handlePreferredLanguageChange}
+              medicines={allMedicines}
             />
             <Button 
-              onClick={() => setIsTabletScannerOpen(true)} 
+              onClick={() => {
+                if (!isAuthenticated) {
+                  setShowAuthDialog(true);
+                  return;
+                }
+                setIsTabletScannerOpen(true);
+              }} 
               variant="outline" 
               size="lg" 
               className="w-full sm:w-auto border-primary text-primary hover:bg-primary/10"
@@ -224,11 +273,26 @@ export default function Home() {
           MediQuery &copy; {new Date().getFullYear()}. For informational purposes only. Always consult a healthcare professional.
         </p>
       </footer>
-      <ChatbotInterface isOpen={isChatbotOpen} onClose={toggleChatbot} />
+      <ChatbotInterface 
+        isOpen={isChatbotOpen} 
+        onClose={toggleChatbot}
+        onMedicineAdded={handleMedicineAdded}
+      />
       <TabletScannerDialog 
         isOpen={isTabletScannerOpen} 
         onClose={() => setIsTabletScannerOpen(false)}
         allMedicines={allMedicines}
+      />
+      <AuthDialog 
+        isOpen={showAuthDialog} 
+        onClose={() => setShowAuthDialog(false)}
+        onSuccess={() => {
+          // After successful login, check what action was pending
+          if (searchTerm && filteredMedicines.length === 0) {
+            // User was trying to ask AI about medicine
+            setIsChatbotOpen(true);
+          }
+        }}
       />
     </div>
   );

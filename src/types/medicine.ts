@@ -9,4 +9,8 @@ export interface Medicine {
   price: string;
   warnings?: string;
   language: string[];
+  // AI-verified medicine fields (optional for backwards compatibility)
+  aiVerified?: boolean;
+  addedBy?: string;
+  addedAt?: string;
 }

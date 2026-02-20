@@ -10,10 +10,14 @@ import { ChatMessage } from './ChatMessage';
 import { medicineQueryChatbot, type MedicineQueryChatbotInput } from '@/ai/flows/medicine-query-chatbot';
 import { useToast } from '@/hooks/use-toast';
 import { LanguageSelector } from '@/components/voice/LanguageSelector';
+import { addAIVerifiedMedicine } from '@/services/medicine-ai-service';
+import { useAuth } from '@/contexts/AuthContext';
+import type { Medicine } from '@/types/medicine';
 
 interface ChatbotInterfaceProps {
   isOpen: boolean;
   onClose: () => void;
+  onMedicineAdded?: () => void;
 }
 
 interface Message {
@@ -26,13 +30,14 @@ interface Message {
 const SpeechRecognition =
   (typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition)) || null;
 
-export function ChatbotInterface({ isOpen, onClose }: ChatbotInterfaceProps) {
+export function ChatbotInterface({ isOpen, onClose, onMedicineAdded }: ChatbotInterfaceProps) {
+  const { user } = useAuth();
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [voiceLanguage, setVoiceLanguage] = useState('en-US');
-  const [recognitionInstance, setRecognitionInstance] = useState<SpeechRecognition | null>(null);
+  const recognitionRef = useRef<SpeechRecognition | null>(null);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
 
@@ -43,35 +48,37 @@ export function ChatbotInterface({ isOpen, onClose }: ChatbotInterfaceProps) {
       recognition.interimResults = false;
       
       recognition.onresult = (event) => {
-        const transcript = event.results[0][0].transcript;
-        setInput(prevInput => prevInput + transcript);
+        const rawTranscript = event.results[0][0].transcript;
+        const cleanedTranscript = rawTranscript.trim().replace(/[.,!?;:\s]+$/g, '');
+        setInput(prevInput => prevInput + cleanedTranscript);
         setIsListening(false);
-        toast({ title: "Voice input captured." });
+        toast({ title: "Voice input captured: " + cleanedTranscript });
       };
 
       recognition.onerror = (event) => {
-        console.error('Speech recognition error', event.error);
-        let errorMessage = 'Speech recognition error.';
-        if (event.error === 'no-speech') errorMessage = 'No speech detected.';
-        else if (event.error === 'audio-capture') errorMessage = 'Audio capture failed. Check microphone.';
-        else if (event.error === 'not-allowed') errorMessage = 'Microphone access denied.';
-        toast({ title: "Voice Error", description: errorMessage, variant: "destructive" });
+        if (event.error === 'no-speech') {
+          console.log('Chatbot: No speech detected');
+        } else if (event.error !== 'aborted') {
+          console.error('Chatbot speech recognition error:', event.error);
+          toast({ 
+            title: "Voice Error", 
+            description: event.error,
+            variant: "destructive" 
+          });
+        }
         setIsListening(false);
       };
       
       recognition.onend = () => setIsListening(false);
-      setRecognitionInstance(recognition);
-    } else {
-      // toast({ title: "Voice input not supported", description: "Your browser doesn't support voice recognition in chatbot.", variant: "destructive" });
+      recognitionRef.current = recognition;
     }
-  }, []);
+  }, [toast]);
   
   useEffect(() => {
-    if (recognitionInstance) {
-      recognitionInstance.lang = voiceLanguage;
+    if (recognitionRef.current) {
+      recognitionRef.current.lang = voiceLanguage;
     }
-  }, [voiceLanguage, recognitionInstance]);
-
+  }, [voiceLanguage]);
 
   useEffect(() => {
     if (scrollAreaRef.current) {
@@ -91,8 +98,42 @@ export function ChatbotInterface({ isOpen, onClose }: ChatbotInterfaceProps) {
     try {
       const chatbotInput: MedicineQueryChatbotInput = { query: trimmedInput };
       const response = await medicineQueryChatbot(chatbotInput);
-      const botMessage: Message = { id: (Date.now() + 1).toString(), sender: 'bot', text: response.response };
+      
+      const botMessage: Message = { 
+        id: (Date.now() + 1).toString(), 
+        sender: 'bot', 
+        text: response.response,
+      };
       setMessages((prev) => [...prev, botMessage]);
+      
+      // Automatically save medicine data to database if available and user is authenticated
+      if (response.medicineData && response.medicineData.isValidMedicine && 
+          response.medicineData.brandName && response.medicineData.genericName && user) {
+        
+        // Save in background
+        const saveResult = await addAIVerifiedMedicine(response.medicineData, user.id);
+        
+        if (saveResult.success) {
+          toast({
+            title: "Medicine Added to Database! 🎉",
+            description: `${response.medicineData.brandName} has been automatically added to our database.`,
+          });
+          
+          // Notify parent to reload medicines
+          onMedicineAdded?.();
+          
+          // Add a system message about the save
+          const systemMessage: Message = {
+            id: (Date.now() + 2).toString(),
+            sender: 'bot',
+            text: `✅ I've automatically added "${response.medicineData.brandName}" to our medicine database. This information is now available to all users!`
+          };
+          setMessages((prev) => [...prev, systemMessage]);
+        } else if (saveResult.error?.includes('already exists')) {
+          // Medicine already in database - this is fine, no need to alert user
+          console.log('Medicine already in database:', response.medicineData.brandName);
+        }
+      }
     } catch (error) {
       console.error("Error calling chatbot flow:", error);
       const errorMessage: Message = {
@@ -109,36 +150,36 @@ export function ChatbotInterface({ isOpen, onClose }: ChatbotInterfaceProps) {
     } finally {
       setIsLoading(false);
     }
-  }, [input, toast]);
+  }, [input, toast, user]);
 
-  const handleVoiceInput = useCallback(async () => {
-    if (!recognitionInstance) {
-      toast({ title: "Voice input unavailable", variant: "destructive" });
+  const handleVoiceInput = useCallback(() => {
+    if (!recognitionRef.current) {
+      toast({ 
+        title: "Voice input unavailable", 
+        description: "Your browser doesn't support speech recognition.",
+        variant: "destructive" 
+      });
       return;
     }
+
     if (isListening) {
-      recognitionInstance.stop();
-      setIsListening(false);
+      recognitionRef.current.stop();
     } else {
-       try {
-        const permissionStatus = await navigator.permissions.query({ name: 'microphone' as PermissionName });
-        if (permissionStatus.state === 'denied') {
-          toast({ title: "Mic Access Denied", description: "Allow microphone access in browser settings.", variant: "destructive"});
-          return;
-        }
-        if (permissionStatus.state === 'prompt') {
-           await navigator.mediaDevices.getUserMedia({ audio: true });
-        }
-        recognitionInstance.lang = voiceLanguage;
-        recognitionInstance.start();
+      try {
+        recognitionRef.current.lang = voiceLanguage;
+        recognitionRef.current.start();
         setIsListening(true);
-        toast({ title: "Listening for chat..." });
+        toast({ title: "🎤 Listening...", description: "Speak your question" });
       } catch (error) {
-        toast({ title: "Mic Error", description: "Could not start voice input for chat.", variant: "destructive" });
-        setIsListening(false);
+        console.error("Chatbot voice error:", error);
+        toast({ 
+          title: "Error", 
+          description: "Could not start voice input.",
+          variant: "destructive" 
+        });
       }
     }
-  }, [recognitionInstance, isListening, voiceLanguage, toast]);
+  }, [isListening, voiceLanguage, toast]);
 
 
   if (!isOpen) return null;
@@ -187,7 +228,7 @@ export function ChatbotInterface({ isOpen, onClose }: ChatbotInterfaceProps) {
             <Button 
               size="icon" 
               onClick={handleVoiceInput} 
-              disabled={isLoading || !recognitionInstance} 
+              disabled={isLoading || !recognitionRef.current} 
               variant={isListening ? "destructive" : "outline"}
               aria-label={isListening ? "Stop voice input" : "Start voice input for chat"}
               className={isListening ? "bg-destructive hover:bg-destructive/90" : "border-primary text-primary hover:bg-primary/10"}

@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'; // Using Inter as a clean, readable fo
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
+import { AuthProvider } from '@/contexts/AuthContext';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,8 +29,10 @@ export default function RootLayout({
         )}
         suppressHydrationWarning
       >
-        {children}
-        <Toaster />
+        <AuthProvider>
+          {children}
+          <Toaster />
+        </AuthProvider>
       </body>
     </html>
   );
