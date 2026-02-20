@@ -45,3 +45,11 @@ pnpm genkit:watch
 
 Run both terminals simultaneously for full functionality.
 
+## Troubleshooting
+
+**Error: 'tsx' is not recognized**
+```bash
+pnpm install tsx -D
+```
+Then run `pnpm genkit:watch` again.
+
