@@ -22,6 +22,7 @@ Create `.env` file:
 
 ```env
 GOOGLE_GENAI_API_KEY=your_api_key_here
+NEXT_PUBLIC_GOOGLE_GENAI_API_KEY=your_api_key_here
 NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
@@ -52,4 +53,12 @@ Run both terminals simultaneously for full functionality.
 pnpm install tsx -D
 ```
 Then run `pnpm genkit:watch` again.
+
+**Error: "Method doesn't allow unregistered callers" (Gemini API)**
+
+Ensure `NEXT_PUBLIC_GOOGLE_GENAI_API_KEY` is in your `.env` file, then restart the dev server:
+```bash
+# Stop the server (Ctrl+C), then:
+pnpm dev
+```
 

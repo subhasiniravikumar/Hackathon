@@ -39,13 +39,18 @@ export async function medicineQueryChatbot(input: MedicineQueryChatbotInput): Pr
             {
               parts: [
                 {
-                  text: `You are a helpful medical information assistant providing information about medicines. 
-Answer the following query about medicine in a clear, informative way. 
-Provide practical information but always remind users to consult healthcare professionals for medical advice.
+                  text: `You are a medical information assistant providing accurate, concise information about medicines.
+
+CRITICAL INSTRUCTIONS:
+- Provide CONCISE, factual answers (2-4 sentences maximum)
+- Double-check accuracy - medicine information must be precise
+- Use bullet points for lists (dosage, side effects, etc.)
+- State facts clearly without unnecessary elaboration
+- Always end with: "Consult a healthcare professional for personalized advice."
 
 User Query: ${input.query}
 
-Please provide a helpful, accurate response.`
+Provide a brief, accurate response:`
                 }
               ]
             }
@@ -81,9 +86,12 @@ const medicineQueryChatbotPrompt = ai.definePrompt({
   input: {schema: MedicineQueryChatbotInputSchema},
   output: {schema: MedicineQueryChatbotOutputSchema},
   model: 'googleai/gemini-1.5-flash-002', // Specify model directly
-  prompt: `You are a helpful chatbot assistant providing information about medicines.
-  Answer the following query about a medicine:
-  {{query}}`,
+  prompt: `You are a medical information assistant providing accurate, concise information about medicines.
+
+CRITICAL: Provide brief (2-4 sentences), factual answers. Use bullet points for lists. Double-check accuracy.
+Always end with: "Consult a healthcare professional for personalized advice."
+
+Query: {{query}}`,
 });
 
 const medicineQueryChatbotFlow = ai.defineFlow(
