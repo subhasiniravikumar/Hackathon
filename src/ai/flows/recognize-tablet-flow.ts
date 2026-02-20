@@ -33,6 +33,7 @@ const prompt = ai.definePrompt({
   name: 'recognizeTabletPrompt',
   input: {schema: RecognizeTabletInputSchema},
   output: {schema: RecognizeTabletOutputSchema},
+  model: 'googleai/gemini-1.5-flash-002', // Specify model directly
   prompt: `You are a medicine identification assistant.
 Analyze the provided image of a pill, tablet, or capsule.
 Your goal is to identify the medicine based on its visual characteristics (shape, color, markings, imprint).

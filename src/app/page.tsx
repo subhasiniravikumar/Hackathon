@@ -144,7 +144,7 @@ export default function Home() {
             Search for medicines, scan a tablet, ask our chatbot, or use voice commands.
           </p>
 
-          <Command open={openCommand} onOpenChange={setOpenCommand} className="mb-4">
+          <Command className="mb-4">
               <CommandInput placeholder="Search medicines by name, use, category..." value={searchTerm} onValueChange={handleSearchTermChange} />
               <CommandList>
                 <CommandEmpty>No results found.</CommandEmpty>

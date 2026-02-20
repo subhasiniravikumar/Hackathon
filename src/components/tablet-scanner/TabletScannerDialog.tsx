@@ -9,7 +9,6 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Loader2, Camera, RefreshCw, Send, AlertTriangle, Pill, UploadCloud, Info } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import type { Medicine } from '@/types/medicine';
-import { recognizeTablet, type RecognizeTabletInput } from '@/ai/flows/recognize-tablet-flow';
 import { getMedicineDetails, type MedicineDetailsInput, type MedicineDetailsOutput } from '@/ai/flows/medicine-details-flow';
 import { MedicineCard } from '@/components/medicine/MedicineCard';
 
@@ -99,54 +98,99 @@ export function TabletScannerDialog({ isOpen, onClose, allMedicines }: TabletSca
     setRecognitionError(null);
 
     try {
-      const recognitionInput: RecognizeTabletInput = { photoDataUri: selectedImage };
-      const recognitionResult = await recognizeTablet(recognitionInput);
-      const rawAiMedicineName = recognitionResult.medicineName;
+      // Use Gemini AI to identify medicine from image - Direct v1 API call
+      toast({ title: 'AI Processing', description: 'Identifying tablet with Gemini AI...' });
+      
+      const apiKey = process.env.NEXT_PUBLIC_GOOGLE_GENAI_API_KEY || '';
+      const base64Data = selectedImage.split(',')[1];
+      const mimeType = selectedImage.split(';')[0].split(':')[1];
+      
+      // Direct REST API call to v1 endpoint (bypassing SDK v1beta issue)
+      const apiResponse = await fetch(
+        `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            contents: [
+              {
+                parts: [
+                  {
+                    text: 'Identify this medicine tablet/pill. Provide ONLY the medicine name (brand or generic). If you cannot identify it, respond with "Unknown medicine".'
+                  },
+                  {
+                    inlineData: {
+                      mimeType: mimeType,
+                      data: base64Data
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }
+      );
 
-      if (rawAiMedicineName.toLowerCase().includes("could not identify") || rawAiMedicineName.toLowerCase().includes("could not get a response")) {
+      if (!apiResponse.ok) {
+        const errorData = await apiResponse.json();
+        throw new Error(`Gemini API Error: ${errorData.error?.message || apiResponse.statusText}`);
+      }
+
+      const responseData = await apiResponse.json();
+      const rawAiMedicineName = responseData.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || 'Unknown medicine';
+      
+      console.log('AI identified medicine:', rawAiMedicineName);
+
+      if (rawAiMedicineName.toLowerCase().includes('unknown') || rawAiMedicineName.toLowerCase().includes('cannot identify')) {
         setRecognitionError(`AI: ${rawAiMedicineName}`);
         toast({ variant: 'default', title: 'Recognition Result', description: rawAiMedicineName });
         setIsProcessingRecognition(false);
         return;
       }
       
-      // Try to find in DB
-      const normalizedAiName = rawAiMedicineName.trim().toLowerCase();
+      // Try to find in DB using AI-identified name
+      const normalizedName = rawAiMedicineName.toLowerCase();
       let foundMedicine: Medicine | null | undefined = null;
 
-      foundMedicine = allMedicines.find(med => med.brandName.trim().toLowerCase() === normalizedAiName) ||
-                      allMedicines.find(med => med.genericName.trim().toLowerCase() === normalizedAiName) ||
-                      allMedicines.find(med => normalizedAiName.includes(med.brandName.trim().toLowerCase()) || med.brandName.trim().toLowerCase().includes(normalizedAiName)) ||
-                      allMedicines.find(med => normalizedAiName.includes(med.genericName.trim().toLowerCase()) || med.genericName.trim().toLowerCase().includes(normalizedAiName));
+      // Search for medicines matching the AI response
+      foundMedicine = allMedicines.find(med => 
+        normalizedName.includes(med.brandName.toLowerCase()) || 
+        med.brandName.toLowerCase().includes(normalizedName)
+      ) || allMedicines.find(med => 
+        normalizedName.includes(med.genericName.toLowerCase()) ||
+        med.genericName.toLowerCase().includes(normalizedName)
+      );
       
       setIsProcessingRecognition(false); // Recognition part is done
 
       if (foundMedicine) {
         setRecognizedMedicineFromDB(foundMedicine);
-        toast({ title: 'Tablet Recognized!', description: `${foundMedicine.brandName} (from database)` });
+        toast({ title: 'Tablet Recognized!', description: `${foundMedicine.brandName} (AI match)` });
       } else {
-        // Not in DB, but AI identified a name. Fetch details for this name.
+        // Not in DB, use AI name to fetch details
         setAiIdentifiedName(rawAiMedicineName);
-        toast({ title: 'AI Suggestion', description: `AI identified: "${rawAiMedicineName}". Not in DB, fetching details...` });
+        toast({ title: 'AI Identified', description: `"${rawAiMedicineName}" - Not in DB, fetching details...` });
         
         setIsFetchingDetails(true);
         try {
           const detailsInput: MedicineDetailsInput = { medicineName: rawAiMedicineName };
           const detailsResult = await getMedicineDetails(detailsInput);
           setAiGeneratedDetails(detailsResult);
-          toast({ title: 'AI Details Fetched', description: `Showing AI-generated info for "${rawAiMedicineName}".` });
+          toast({ title: 'Details Retrieved', description: `Showing info for "${rawAiMedicineName}".` });
         } catch (detailsError) {
           console.error('Error fetching medicine details:', detailsError);
-          setRecognitionError(`AI identified: "${rawAiMedicineName}". Could not fetch further details from AI.`);
-          toast({ variant: 'destructive', title: 'Details Fetch Error', description: 'Failed to get details from the assistant.' });
+          setRecognitionError(`AI identified: "${rawAiMedicineName}". Could not fetch details.`);
+          toast({ variant: 'destructive', title: 'Details Fetch Error', description: 'Failed to get details.' });
         } finally {
           setIsFetchingDetails(false);
         }
       }
     } catch (error) {
       console.error('Error recognizing tablet:', error);
-      setRecognitionError('An error occurred during tablet recognition. Please try again.');
-      toast({ variant: 'destructive', title: 'Recognition Error', description: 'Failed to process image with AI.' });
+      setRecognitionError('An error occurred during AI recognition. Please try again.');
+      toast({ variant: 'destructive', title: 'AI Error', description: 'Failed to process image with AI.' });
       setIsProcessingRecognition(false);
       setIsFetchingDetails(false);
     }

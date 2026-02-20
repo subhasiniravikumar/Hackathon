@@ -25,13 +25,85 @@ const MedicineDetailsOutputSchema = z.object({
 export type MedicineDetailsOutput = z.infer<typeof MedicineDetailsOutputSchema>;
 
 export async function getMedicineDetails(input: MedicineDetailsInput): Promise<MedicineDetailsOutput> {
-  return medicineDetailsFlow(input);
+  try {
+    // Direct API call to Gemini v1 endpoint
+    const apiKey = process.env.GOOGLE_GENAI_API_KEY || process.env.NEXT_PUBLIC_GOOGLE_GENAI_API_KEY || '';
+    
+    const prompt = `You are a helpful medical information assistant.
+The user has provided a medicine name: ${input.medicineName}.
+
+Please provide a concise, easy-to-understand description of this medicine.
+Include its common uses, potential pros (benefits), and potential cons (side effects or drawbacks).
+If the name seems ambiguous, too generic to provide specific information, or not like a medicine, please indicate that.
+
+Respond ONLY in this exact JSON format:
+{
+  "generalDescription": "brief overview of the medicine",
+  "uses": "common uses or indications",
+  "pros": "potential benefits or advantages",
+  "cons": "potential side effects or drawbacks"
+}`;
+
+    const apiResponse = await fetch(
+      `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          contents: [
+            {
+              parts: [
+                {
+                  text: prompt
+                }
+              ]
+            }
+          ]
+        })
+      }
+    );
+
+    if (!apiResponse.ok) {
+      const errorData = await apiResponse.json();
+      console.error('Gemini API Error:', errorData);
+      throw new Error(`API Error: ${errorData.error?.message || apiResponse.statusText}`);
+    }
+
+    const responseData = await apiResponse.json();
+    const aiResponse = responseData.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || '';
+    
+    // Parse JSON response
+    const jsonMatch = aiResponse.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      const parsed = JSON.parse(jsonMatch[0]);
+      return {
+        generalDescription: parsed.generalDescription || 'No description available.',
+        uses: parsed.uses || 'No usage information available.',
+        pros: parsed.pros || 'No benefits information available.',
+        cons: parsed.cons || 'No side effects information available.',
+      };
+    }
+    
+    throw new Error('Invalid response format');
+  } catch (error) {
+    console.error('Medicine details error:', error);
+    // Fallback response on error
+    return {
+      generalDescription: `${input.medicineName} is a medication. For specific information, please consult your healthcare provider.`,
+      uses: 'Consult a healthcare professional for detailed usage information.',
+      pros: 'Effectiveness varies by individual. Consult your doctor.',
+      cons: 'Potential side effects exist. Consult your doctor before use.',
+    };
+  }
 }
 
 const prompt = ai.definePrompt({
   name: 'medicineDetailsPrompt',
   input: {schema: MedicineDetailsInputSchema},
   output: {schema: MedicineDetailsOutputSchema},
+  model: 'googleai/gemini-1.5-flash-002', // Specify model directly
   prompt: `You are a helpful medical information assistant.
 The user has provided a medicine name: {{{medicineName}}}.
 
