@@ -38,23 +38,37 @@ export function VoiceInput({
       recognition.lang = preferredLanguage;
 
       recognition.onresult = (event) => {
-        const transcript = event.results[0][0].transcript;
-        onTranscript(transcript);
-        setGlobalSearchTerm(transcript); // Update search bar with voice input
+        const rawTranscript = event.results[0][0].transcript;
+        // Clean transcript: trim whitespace and remove all trailing punctuation
+        const cleanedTranscript = rawTranscript.trim().replace(/[.,!?;:\s]+$/g, '');
+        console.log('Raw transcript:', rawTranscript);
+        console.log('Cleaned transcript:', cleanedTranscript);
+        onTranscript(cleanedTranscript);
+        setGlobalSearchTerm(cleanedTranscript); // Update search bar with voice input
         setIsListening(false);
-        toast({ title: "Voice input received", description: `"${transcript}"` });
+        toast({ title: "Voice input received", description: `"${cleanedTranscript}"` });
       };
 
       recognition.onerror = (event) => {
-        console.error('Speech recognition error', event.error);
         let errorMessage = 'Speech recognition error.';
+        
         if (event.error === 'no-speech') {
           errorMessage = 'No speech was detected. Please try again.';
+          console.log('Speech recognition: no speech detected');
         } else if (event.error === 'audio-capture') {
           errorMessage = 'Audio capture failed. Please ensure microphone access.';
+          console.error('Speech recognition error:', event.error);
         } else if (event.error === 'not-allowed') {
           errorMessage = 'Microphone access denied. Please allow access in browser settings.';
+          console.error('Speech recognition error:', event.error);
+        } else if (event.error === 'aborted') {
+          // User stopped listening, no need to show error
+          setIsListening(false);
+          return;
+        } else {
+          console.error('Speech recognition error:', event.error);
         }
+        
         toast({ title: "Error", description: errorMessage, variant: "destructive" });
         setIsListening(false);
       };
